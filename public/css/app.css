@@ -3,8 +3,133 @@
     padding: 0;
     box-sizing: border-box;
     background-color: var(--background-color-p);
+    width: 100%;
 }
-h1{
-    color:var(--color-text-p);
+body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+}
+.containers{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100VH;
+}
+.container {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly; 
+      width: 95%;
+      height: 100%;
 }
 
+.column {
+    display: flex;
+    justify-content: flex-end;
+      padding: 20px;
+      height: 100%;
+}
+.smal{
+        width: 60%;
+}
+.large{
+        width: 100%;
+         border-left: 1px solid var(--border);
+         border-right: 1px solid var(--border) ;
+}
+nav{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        padding-top: 60px ;
+}
+nav img{
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 5%;
+}
+    
+.navigate{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-direction: column;
+    height: 100%;
+} 
+.nav-onlgets{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.onglets a{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.6em;
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: transparent;
+}   
+.navigate .onglets{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    border-radius: 40px;
+    padding: 10px 10px;
+}
+
+.navigate .onglets:hover{
+    background-color: rgba(112, 112, 112, 0.548);
+}
+.onglets i {
+    font-size: 25px;
+    color: white;
+    background-color: transparent;
+}
+.navigate .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 30px;
+    margin-top: 20px ;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    width: 95%;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.pp{
+    width: 25%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: rgb(40, 206, 248);
+}
+.profil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+.profil i{
+    font-size: 1.5em;
+    color: white;
+}
+
+.profil-name{
+    font-size: 1.3em;
+    color: white;
+}
+.profil-name p{
+    color: rgba(124, 124, 124, 0.637);
+}

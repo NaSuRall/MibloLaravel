@@ -70,8 +70,45 @@
                             <button>Following</button>
                         </div>
                         <div class="create-post">
+                            <form action="{{ route('posts.store') }}" method="POST">
+                                @csrf
+                                <div class="post-input">
+                                    <div class="pp"></div>
+                                    <input type="text" name="description" placeholder="What's happening?">
+                                </div>
+                                <div class="post-options">
+                                    <div class="options-left">
+                                        <i class="fa-regular fa-image"></i>
+                                        <i class="fa-solid fa-chart-simple"></i>
+                                        <i class="fa-solid fa-face-smile"></i>
+                                        <i class="fa-solid fa-calendar"></i>
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="options-right">
+                                        <button class="button">Post</button>
+                                    </div>
+                                </div>
+                            </form>
 
                         </div>
+                    </div>
+                    <div>
+                        @foreach($posts as $post)
+                            <div class="post">
+                                <div class="post-header">
+                                    <div class="pp"></div>
+                                    <div class="post-user">
+                                        <span class="tag">@admintagtest</span>
+                                        <span class="tag">{{ $post->created_at->diffForHumans() }}</span>
+                                    </div>
+                                  
+                                </div>
+                                <div class="post-content">
+                                    <p>{{ $post->description }}</p>
+                                </div>
+                                
+                            </div>
+                        @endforeach 
                     </div>
 
 

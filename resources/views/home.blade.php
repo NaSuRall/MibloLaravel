@@ -63,7 +63,20 @@
                         </div>
                     </nav>
                 </div>
-                <div class="column large"></div>
+                <div class="column large">
+                    <div class="header">
+                        <div class="categorie">
+                            <button><span>For You</span></button>
+                            <button>Following</button>
+                        </div>
+                        <div class="create-post">
+
+                        </div>
+                    </div>
+
+
+
+                </div>
                 <div class="column smal"></div>
         </div>
     </div>
